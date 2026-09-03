@@ -1,0 +1,83 @@
+.post-content.md-content section {
+  margin: 2.5rem 0;
+}
+
+.section-label {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: var(--secondary);
+  margin-bottom: 0.4rem;
+}
+
+.hero .eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  color: var(--secondary);
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  margin: 0.3rem 0 1rem;
+}
+
+.hero .lede {
+  font-size: 1.1rem;
+}
+
+.hero-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.hero-links a:first-child {
+  background: var(--primary);
+  color: var(--theme);
+  border-color: var(--primary);
+}
+
+.paths-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.path-card {
+  display: block;
+  padding: 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--primary);
+  transition: border-color 0.15s ease;
+}
+
+.path-card:hover {
+  border-color: var(--primary);
+}
+
+.path-num {
+  font-size: 0.8rem;
+  color: var(--secondary);
+}
+
+.path-card h3 {
+  margin: 0.4rem 0;
+}
+
+.path-cta {
+  font-size: 0.85rem;
+  color: var(--secondary);
+}
+
+.boundary {
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+}

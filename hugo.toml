@@ -1,0 +1,105 @@
+baseURL = "https://example.com/"
+languageCode = "it-it"
+title = "Francesco"
+theme = "PaperMod"
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+
+[pagination]
+  pagerSize = 10
+
+[minify]
+  disableXML = true
+
+[params]
+  env = "production"
+  mainSections = ["research", "publications", "notes"]
+  title = "Francesco"
+  description = "Ricerca, pubblicazioni e note di studio."
+  keywords = ["Francesco", "ricerca", "pubblicazioni", "accademico"]
+  author = "Francesco"
+  DateFormat = "January 2006"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowShareButtons = false
+  ShowReadingTime = true
+  displayFullLangName = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = true
+  ShowAllPagesInArchive = true
+  ShowPageNums = true
+  ShowToc = true
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+
+  [params.homeInfoParams]
+    Title = "Francesco"
+    Content = "Ricercatore indipendente. Studio e pubblico i risultati del mio lavoro in pubblico, un progetto alla volta."
+
+  [params.assets]
+    disableHLJS = false
+    favicon = "/favicon.ico"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/"
+
+  [[params.socialIcons]]
+    name = "orcid"
+    url = "https://orcid.org/"
+
+  [[params.socialIcons]]
+    name = "googlescholar"
+    url = "https://scholar.google.com/"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "index.xml"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+
+[[menu.main]]
+  identifier = "research"
+  name = "Ricerca"
+  url = "/research/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "publications"
+  name = "Pubblicazioni"
+  url = "/publications/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "notes"
+  name = "Note"
+  url = "/notes/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 40
+
+[[menu.main]]
+  identifier = "archive"
+  name = "Archivio"
+  url = "/archive/"
+  weight = 50
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
