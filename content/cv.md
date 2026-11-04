@@ -67,7 +67,7 @@ students, including the 2025 campaign for a safer department building.
 
 ## Skills
 
-LaTeX · English (B2)
+LaTeX · English (B2) · German (A1.1)
 
 ## Contact
 
