@@ -1,88 +1,52 @@
-.post-content.md-content section {
-  margin: 2.5rem 0;
+/* =========================================================
+   Base layout — shared by every style variant.
+   Variant-specific look lives in theme.css (same folder).
+   ========================================================= */
+
+:root {
+  --accent: rgb(30, 30, 30);
+  --accent-soft: rgba(30, 30, 30, 0.07);
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-head: var(--font-body);
+  --head-weight: 650;
+  --main-width: 720px;
+}
+:root[data-theme="dark"] {
+  --accent: rgb(218, 218, 219);
+  --accent-soft: rgba(255, 255, 255, 0.08);
 }
 
-.section-label {
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.75rem;
-  color: var(--secondary);
-  margin-bottom: 0.4rem;
+body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-.hero .eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 0.8rem;
-  color: var(--secondary);
+.post-content,
+.post-content p,
+.post-content li {
+  line-height: 1.65;
+  overflow-wrap: break-word;
+  hyphens: manual;
 }
 
-.hero h1 {
-  font-size: 2.6rem;
-  margin: 0.3rem 0 1rem;
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-title,
+.intro h1 {
+  font-family: var(--font-head);
+  font-weight: var(--head-weight);
+  letter-spacing: -0.01em;
+  text-wrap: balance;
 }
 
-.hero .lede {
-  font-size: 1.1rem;
-}
+.post-title { font-size: 2.1rem; }
+.post-content h2 { font-size: 1.45rem; margin: 2.4rem 0 1rem; }
+.post-content h3 { font-size: 1.15rem; }
 
-.hero-links a {
-  display: inline-block;
-  margin-right: 1rem;
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  text-decoration: none;
-  color: var(--primary);
-}
-
-.hero-links a:first-child {
-  background: var(--primary);
-  color: var(--theme);
-  border-color: var(--primary);
-}
-
-.paths-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.2rem;
-  margin-top: 1rem;
-}
-
-.path-card {
-  display: block;
-  padding: 1.2rem;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  text-decoration: none;
-  color: var(--primary);
-  transition: border-color 0.15s ease;
-}
-
-.path-card:hover {
-  border-color: var(--primary);
-}
-
-.path-num {
-  font-size: 0.8rem;
-  color: var(--secondary);
-}
-
-.path-card h3 {
-  margin: 0.4rem 0;
-}
-
-.path-cta {
-  font-size: 0.85rem;
-  color: var(--secondary);
-}
-
-.boundary {
-  border-top: 1px solid var(--border);
-  padding-top: 1.5rem;
-}
-
-/* ---- Header: small round photo at the top left ---- */
+/* ---- Header ---- */
+.logo a { font-family: var(--font-head); font-weight: var(--head-weight); }
 .logo a img {
   border-radius: 50%;
   object-fit: cover;
@@ -90,76 +54,185 @@
   height: 34px;
   margin-inline-end: 10px;
 }
+#menu a { font-size: 0.95rem; }
+#menu .active { border-bottom: 2px solid var(--accent); }
 
-/* ---- Home: profile card + main column ---- */
-.home-grid {
-  display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 2.5rem;
-  align-items: start;
+/* ---- Home intro: photo + name side by side ---- */
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin: 0.5rem 0 1.8rem;
 }
-
-.profile-card {
-  position: sticky;
-  top: 1.5rem;
-  font-size: 0.92rem;
-}
-
-.post-content .profile-photo {
-  width: 140px;
-  height: 140px;
+.post-content .intro-photo {
+  width: 132px;
+  height: 132px;
+  flex: none;
   border-radius: 50%;
   object-fit: cover;
-  margin: 0 0 1rem;
+  margin: 0;
+}
+.intro h1 {
+  font-size: 2.3rem;
+  line-height: 1.12;
+  margin: 0 0 0.45rem;
+}
+.post-content .intro-role {
+  margin: 0 0 0.6rem;
+  color: var(--secondary);
+  line-height: 1.45;
+}
+.post-content .intro-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+.intro-status .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgb(46, 160, 90);
+  flex: none;
 }
 
-.post-content .profile-name {
+.post-content .lede { font-size: 1.12rem; margin-bottom: 1.4rem; }
+
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 2.6rem;
+}
+.post-content .quick-links a {
+  box-shadow: none;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.35rem 0.95rem;
+  font-size: 0.92rem;
+  white-space: nowrap;
+}
+.post-content .quick-links a:first-child {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--theme);
+}
+
+/* ---- Home blocks ---- */
+.block { margin: 0 0 2.4rem; }
+.post-content h2.label {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
   font-weight: 600;
-  font-size: 1.05rem;
-  margin: 0 0 0.2rem;
-}
-
-.post-content .profile-role {
-  color: var(--secondary);
-  margin: 0 0 1rem;
-}
-
-.profile-facts dt {
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 0.7rem;
   color: var(--secondary);
-  margin-top: 0.7rem;
+  margin: 0 0 0.8rem;
 }
-
-.post-content .profile-facts dd {
-  margin: 0.15rem 0 0;
-  overflow-wrap: anywhere;
+.post-content .now-title,
+.post-content .featured-title {
+  font-family: var(--font-head);
+  font-weight: var(--head-weight);
+  font-size: 1.3rem;
+  line-height: 1.3;
+  margin: 0 0 0.6rem;
+  text-wrap: balance;
 }
-
-.home-main section:first-child { margin-top: 0; }
 
 .featured {
   border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 1.2rem 1.4rem;
+  border-radius: var(--radius);
+  padding: 1.3rem 1.4rem;
+}
+.featured-links { display: flex; gap: 1.2rem; margin: 0.4rem 0 0; }
+
+.post-content ul.tags {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+.post-content ul.tags li {
+  margin: 0;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
-.featured h3 { margin: 0.3rem 0 0.6rem; }
-
-@media (max-width: 760px) {
-  .home-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  .profile-card {
-    position: static;
-    text-align: center;
-  }
-  .post-content .profile-photo { margin: 0 auto 0.8rem; display: block; }
-  .profile-facts dt, .post-content .profile-facts dd { text-align: center; }
-  .hero h1 { font-size: 2rem; }
+/* ---- CV entries ---- */
+.entry {
+  margin: 0 0 1.6rem;
 }
+.entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+.entry-title {
+  font-family: var(--font-head);
+  font-weight: var(--head-weight);
+  font-size: 1.08rem;
+}
+.entry-date {
+  flex: none;
+  color: var(--secondary);
+  font-size: 0.88rem;
+  font-variant-numeric: tabular-nums;
+}
+.post-content .entry-meta {
+  margin: 0.1rem 0 0.4rem;
+  color: var(--secondary);
+  font-size: 0.93rem;
+  line-height: 1.45;
+}
+.post-content .entry-body { margin: 0 0 0.35rem; }
+.post-content .sub-label {
+  margin: 1rem 0 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--secondary);
+}
+
+.post-content ul.courses {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.post-content ul.courses li {
+  margin: 0 0 0.9rem;
+  padding: 0 0 0 0.9rem;
+  border-inline-start: 2px solid var(--border);
+  line-height: 1.45;
+}
+.courses .grade,
+.courses .course,
+.courses .prof,
+.courses .desc { display: block; }
+.courses .grade {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--secondary);
+}
+.courses .course {
+  font-family: var(--font-head);
+  font-weight: var(--head-weight);
+  margin-top: 0.15rem;
+}
+.courses .prof { font-size: 0.92rem; }
+.courses .desc { color: var(--secondary); font-size: 0.92rem; margin-top: 0.1rem; }
 
 .cv-download a {
   display: inline-block;
@@ -168,28 +241,43 @@
   border-radius: 6px;
 }
 
-@media (max-width: 760px) {
-  .logo a { font-size: 1.05rem; }
-  .post-content .profile-name { display: none; }
-}
+/* ---- Phones ---- */
+@media (max-width: 600px) {
+  :root { --gap: 18px; }
 
-/* ---- CV course list: grade on top, then course, then description ---- */
-.post-content ul.courses {
-  list-style: none;
-  padding-inline-start: 0;
+  .nav { flex-direction: column; align-items: flex-start; }
+  .logo { margin-inline-end: 0; }
+  .logo a { font-size: 1.05rem; }
+  #menu {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    margin: 0 0 0.4rem;
+    scrollbar-width: none;
+  }
+  #menu::-webkit-scrollbar { display: none; }
+  #menu { justify-content: space-between; }
+  #menu li + li { margin-inline-start: 0; }
+  #menu li a { padding: 0 0 4px; }
+  #menu a { font-size: 0.9rem; white-space: nowrap; }
+  .main { padding-top: 0.6rem; }
+  .post-header { margin-top: 0.4rem; }
+
+  .post-title { font-size: 1.7rem; }
+  .post-content h2 { font-size: 1.25rem; margin-top: 2rem; }
+
+  .intro { gap: 1rem; margin-top: 0; }
+  .post-content .intro-photo { width: 84px; height: 84px; }
+  .intro h1 { font-size: 1.45rem; }
+  .post-content .intro-role { font-size: 0.9rem; margin-bottom: 0.5rem; }
+  .post-content .intro-status { font-size: 0.76rem; padding: 0.2rem 0.6rem; white-space: nowrap; }
+  .quick-links { gap: 0.4rem; }
+  .post-content .quick-links a { padding: 0.3rem 0.75rem; font-size: 0.85rem; }
+
+  .post-content .lede { font-size: 1.02rem; }
+  .post-content .now-title,
+  .post-content .featured-title { font-size: 1.12rem; }
+  .featured { padding: 1rem 1.05rem; }
+
+  .entry-title { font-size: 1rem; }
 }
-.post-content ul.courses li {
-  margin: 0 0 1rem;
-  padding-inline-start: 0.9rem;
-  border-inline-start: 2px solid var(--border);
-}
-.courses .grade,
-.courses .course,
-.courses .desc { display: block; }
-.courses .grade {
-  font-size: 0.8rem;
-  letter-spacing: 0.04em;
-  color: var(--secondary);
-  font-weight: 600;
-}
-.courses .desc { color: var(--secondary); font-size: 0.95rem; }

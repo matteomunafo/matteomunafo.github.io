@@ -1,0 +1,24 @@
+/* Variant A — Classico: serif throughout, warm paper, navy accent */
+:root {
+  --font-body: "Source Serif 4", Georgia, serif;
+  --font-head: "Source Serif 4", Georgia, serif;
+  --head-weight: 600;
+  --theme: rgb(250, 248, 244);
+  --entry: rgb(255, 254, 251);
+  --border: rgb(228, 223, 214);
+  --accent: rgb(31, 58, 95);
+  --accent-soft: rgba(31, 58, 95, 0.08);
+}
+:root[data-theme="dark"] {
+  --theme: rgb(26, 27, 30);
+  --border: rgb(56, 57, 62);
+  --accent: rgb(160, 186, 220);
+  --accent-soft: rgba(160, 186, 220, 0.12);
+}
+.post-content { font-size: 1.06rem; }
+.post-content a { color: var(--accent); }
+.post-content h2:not(.label) { border-bottom: 1px solid var(--border); padding-bottom: 0.35rem; }
+.post-content h2.label { font-family: system-ui, sans-serif; color: var(--accent); }
+.post-content .quick-links a:first-child { color: var(--theme); }
+.featured { background: var(--entry); }
+.post-content ul.courses li { border-inline-start-color: var(--accent-soft); }
