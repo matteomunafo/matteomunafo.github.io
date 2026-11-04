@@ -1,6 +1,6 @@
-baseURL = "https://example.com/"
-languageCode = "it-it"
-title = "Francesco"
+baseURL = "https://matteomunafo.github.io/"
+languageCode = "en-us"
+title = "Matteo Francesco Munafò"
 theme = "PaperMod"
 enableRobotsTXT = true
 buildDrafts = false
@@ -16,53 +16,47 @@ enableEmoji = true
 
 [params]
   env = "production"
-  mainSections = ["research", "publications", "notes"]
-  title = "Francesco"
-  description = "Ricerca, pubblicazioni e note di studio."
-  keywords = ["Francesco", "ricerca", "pubblicazioni", "accademico"]
-  author = "Francesco"
+  mainSections = ["research", "publications", "seminars"]
+  title = "Matteo Francesco Munafò"
+  description = "Matteo Francesco Munafò — higher category theory for algebraic geometry, higher topoi and homotopy type theory."
+  keywords = ["Matteo Francesco Munafò", "higher category theory", "higher topoi", "homotopy type theory", "algebraic geometry"]
+  author = "Matteo Francesco Munafò"
+  images = ["images/profile.jpg"]
   DateFormat = "January 2006"
   defaultTheme = "auto"
   disableThemeToggle = false
   ShowShareButtons = false
-  ShowReadingTime = true
-  displayFullLangName = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
+  ShowReadingTime = false
+  ShowPostNavLinks = false
+  ShowBreadCrumbs = false
   ShowCodeCopyButtons = true
-  ShowRssButtonInSectionTermList = true
-  ShowAllPagesInArchive = true
-  ShowPageNums = true
-  ShowToc = true
+  ShowRssButtonInSectionTermList = false
+  ShowPageNums = false
   comments = false
-  hidemeta = false
+  hidemeta = true
   hideSummary = false
   showtoc = false
   tocopen = false
 
-  [params.homeInfoParams]
-    Title = "Francesco"
-    Content = "Ricercatore indipendente. Studio e pubblico i risultati del mio lavoro in pubblico, un progetto alla volta."
+  # Small round photo at the top left, next to the name.
+  # To change the photo, replace static/images/profile.jpg (same file name).
+  [params.label]
+    text = "Matteo Francesco Munafò"
+    icon = "/images/profile.jpg"
+    iconHeight = 34
 
   [params.assets]
-    disableHLJS = false
+    disableHLJS = true
     favicon = "/favicon.ico"
 
   [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/"
+    name = "email"
+    url = "mailto:matteo.munafo02@gmail.com"
 
-  [[params.socialIcons]]
-    name = "orcid"
-    url = "https://orcid.org/"
-
-  [[params.socialIcons]]
-    name = "googlescholar"
-    url = "https://scholar.google.com/"
-
-  [[params.socialIcons]]
-    name = "rss"
-    url = "index.xml"
+  # To show a GitHub icon too, remove the "#" from the next three lines:
+  # [[params.socialIcons]]
+  #   name = "github"
+  #   url = "https://github.com/matteomunafo"
 
 [markup]
   [markup.goldmark]
@@ -73,20 +67,26 @@ enableEmoji = true
 
 [[menu.main]]
   identifier = "research"
-  name = "Ricerca"
+  name = "Research"
   url = "/research/"
   weight = 10
 
 [[menu.main]]
   identifier = "publications"
-  name = "Pubblicazioni"
+  name = "Publications"
   url = "/publications/"
+  weight = 15
+
+[[menu.main]]
+  identifier = "seminars"
+  name = "Seminars"
+  url = "/seminars/"
   weight = 20
 
 [[menu.main]]
-  identifier = "notes"
-  name = "Note"
-  url = "/notes/"
+  identifier = "cv"
+  name = "CV"
+  url = "/cv/"
   weight = 30
 
 [[menu.main]]
@@ -94,12 +94,6 @@ enableEmoji = true
   name = "About"
   url = "/about/"
   weight = 40
-
-[[menu.main]]
-  identifier = "archive"
-  name = "Archivio"
-  url = "/archive/"
-  weight = 50
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

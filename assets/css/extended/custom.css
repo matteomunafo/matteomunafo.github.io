@@ -81,3 +81,94 @@
   border-top: 1px solid var(--border);
   padding-top: 1.5rem;
 }
+
+/* ---- Header: small round photo at the top left ---- */
+.logo a img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 34px;
+  height: 34px;
+  margin-inline-end: 10px;
+}
+
+/* ---- Home: profile card + main column ---- */
+.home-grid {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.profile-card {
+  position: sticky;
+  top: 1.5rem;
+  font-size: 0.92rem;
+}
+
+.post-content .profile-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 0 1rem;
+}
+
+.post-content .profile-name {
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin: 0 0 0.2rem;
+}
+
+.post-content .profile-role {
+  color: var(--secondary);
+  margin: 0 0 1rem;
+}
+
+.profile-facts dt {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.7rem;
+  color: var(--secondary);
+  margin-top: 0.7rem;
+}
+
+.post-content .profile-facts dd {
+  margin: 0.15rem 0 0;
+  overflow-wrap: anywhere;
+}
+
+.home-main section:first-child { margin-top: 0; }
+
+.featured {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.2rem 1.4rem;
+}
+
+.featured h3 { margin: 0.3rem 0 0.6rem; }
+
+@media (max-width: 760px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .profile-card {
+    position: static;
+    text-align: center;
+  }
+  .post-content .profile-photo { margin: 0 auto 0.8rem; display: block; }
+  .profile-facts dt, .post-content .profile-facts dd { text-align: center; }
+  .hero h1 { font-size: 2rem; }
+}
+
+.cv-download a {
+  display: inline-block;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+@media (max-width: 760px) {
+  .logo a { font-size: 1.05rem; }
+  .post-content .profile-name { display: none; }
+}

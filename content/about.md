@@ -2,19 +2,12 @@
 title: "About"
 ---
 
-Sono Francesco, [ruolo/istituzione/breve bio].
+I am Matteo Francesco Munafò, a mathematician working on higher category theory and its
+applications to algebraic geometry.
 
-## Formazione
+I am currently looking for a **PhD position in Europe** in topics related to higher
+category theory.
 
-- [Titolo] — [Istituzione], [Anno]
+## Contact
 
-## Interessi di ricerca
-
-- [Area 1]
-- [Area 2]
-
-## Contatti
-
-- Email: [email]
-- GitHub: [link]
-- ORCID: [link]
+Email: [matteo.munafo02@gmail.com](mailto:matteo.munafo02@gmail.com)
