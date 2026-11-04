@@ -8,6 +8,10 @@ applications to algebraic geometry.
 I am currently looking for a **PhD position in Europe** in topics related to higher
 category theory.
 
+## Outside mathematics
+
+I enjoy strategy games, I follow politics, and I am fond of ties.
+
 ## Contact
 
 Email: [matteo.munafo02@gmail.com](mailto:matteo.munafo02@gmail.com)

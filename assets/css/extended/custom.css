@@ -172,3 +172,24 @@
   .logo a { font-size: 1.05rem; }
   .post-content .profile-name { display: none; }
 }
+
+/* ---- CV course list: grade on top, then course, then description ---- */
+.post-content ul.courses {
+  list-style: none;
+  padding-inline-start: 0;
+}
+.post-content ul.courses li {
+  margin: 0 0 1rem;
+  padding-inline-start: 0.9rem;
+  border-inline-start: 2px solid var(--border);
+}
+.courses .grade,
+.courses .course,
+.courses .desc { display: block; }
+.courses .grade {
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: var(--secondary);
+  font-weight: 600;
+}
+.courses .desc { color: var(--secondary); font-size: 0.95rem; }

@@ -31,6 +31,8 @@ spaces. Following van den Dries, *Tame topology and o-minimal structures*.
 
 ## Finite group schemes *(in Italian)*
 
+*Bachelor in Mathematics, Università degli Studi di Milano*
+
 A study of parts of R. Pink's notes *Finite group schemes*, aiming at the theorem that
 finite commutative group schemes over a field of characteristic zero are étale.
 Written under the guidance of Prof. Fabrizio Andreatta.

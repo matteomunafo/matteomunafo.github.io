@@ -13,20 +13,40 @@ supervisor Prof. Denis-Charles Cisinski
 
 Selected courses:
 
-- *Synthetic Category Theory* (Cisinski) — type-theoretic formalisation of higher categories · 1.0
-- *Goodwillie Calculus* (Hoyois) — stable categories and Goodwillie calculus · 1.0
-- *Higher Geometry 2* (Neeman) — tensor-triangulated categories in derived algebraic geometry · 30 cum laude
-- *Higher Algebra* (Vezzani) — perfectoid spaces and analytic geometry · 30 cum laude
-- *Homological Algebra* (Vezzani, Kritz) — DG-derived categories, topos theory in algebraic geometry · 30 cum laude
+<ul class="courses">
+<li><span class="grade">1.0 · Universität Regensburg</span>
+<span class="course"><em>Synthetic Category Theory</em> — Prof. Denis-Charles Cisinski</span>
+<span class="desc">A type-theoretic formalisation of higher categories.</span></li>
+<li><span class="grade">1.0 · Universität Regensburg</span>
+<span class="course"><em>Goodwillie Calculus</em> — Prof. Marc Hoyois</span>
+<span class="desc">Seminar course on stable categories and Goodwillie calculus.</span></li>
+<li><span class="grade">30 cum laude · Università degli Studi di Milano</span>
+<span class="course"><em>Higher Geometry 2</em> — Prof. Amnon Neeman</span>
+<span class="desc">Tensor-triangulated categories and applications in derived algebraic geometry.</span></li>
+<li><span class="grade">30 cum laude · Università degli Studi di Milano</span>
+<span class="course"><em>Higher Algebra</em> — Prof. Alberto Vezzani</span>
+<span class="desc">Perfectoid spaces and analytic geometry.</span></li>
+<li><span class="grade">30 cum laude · Università degli Studi di Milano</span>
+<span class="course"><em>Homological Algebra</em> — Prof. Alberto Vezzani and Daniel Kritz</span>
+<span class="desc">Homological algebra via DG-derived categories; applications of topos theory to algebraic geometry.</span></li>
+</ul>
 
 **Bachelor in Mathematics** — Università degli Studi di Milano · 2021–2024  
 Graduated with full marks, with a focus on algebra.  
 Thesis: *Galois Categories*, supervisor Prof. Rodolfo Venerucci  
-Final essay on R. Pink's notes [*Finite group schemes*](/seminars/finite-group-schemes.pdf),
+Written essay on R. Pink's notes [*Finite group schemes*](/seminars/finite-group-schemes.pdf),
 with Prof. Fabrizio Andreatta
 
-Selected courses: *Algebra 4* (Montoli, Mazza) — category theory and commutative algebra · 30 cum laude;
-*Category Theory* (Mantovani), a master's course taken in advance — monads, topos theory, abelian categories · 30
+Selected courses:
+
+<ul class="courses">
+<li><span class="grade">30 cum laude · Università degli Studi di Milano</span>
+<span class="course"><em>Algebra 4</em> — Prof. Montoli and Prof. Mazza</span>
+<span class="desc">Basic notions of category theory and commutative algebra.</span></li>
+<li><span class="grade">30 · Università degli Studi di Milano</span>
+<span class="course"><em>Category Theory</em> — Prof. Sandra Mantovani</span>
+<span class="desc">A master's course taken in advance: monads, topos theory and abelian categories.</span></li>
+</ul>
 
 ## Conferences, schools and retreats
 

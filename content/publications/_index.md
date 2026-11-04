@@ -16,7 +16,3 @@ of homotopy type theory, avoiding simplicial structures and giving a different
 construction of the universe.
 
 [PDF](/publications/thesis.pdf) · [Slides](/research/thesis-slides.pdf)
-
-## Galois categories
-
-*Bachelor's thesis, Università degli Studi di Milano, 2024 — supervisor: Prof. Rodolfo Venerucci*
