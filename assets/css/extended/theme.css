@@ -22,3 +22,5 @@
 .post-content .quick-links a:first-child { color: var(--theme); }
 .featured { background: var(--entry); }
 .post-content ul.courses li { border-inline-start-color: var(--accent-soft); }
+/* same warm background on the home page as on every other page */
+.list { background: var(--theme); }

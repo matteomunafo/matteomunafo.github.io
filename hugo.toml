@@ -38,16 +38,17 @@ enableEmoji = true
   showtoc = false
   tocopen = false
 
-  # Small round photo at the top left, next to the name.
-  # To change the photo, replace static/images/profile.jpg (same file name).
+  # Small round "M" monogram at the top left, next to the name.
+  # The photo on the home page is static/images/profile.jpg (replace it, same file name).
   [params.label]
     text = "Matteo Francesco Munafò"
-    icon = "/images/profile.jpg"
+    icon = "/images/monogram.png"
     iconHeight = 34
 
   [params.assets]
     disableHLJS = true
     favicon = "/favicon.ico"
+    theme_color = "#FAF8F4"
 
   [[params.socialIcons]]
     name = "email"
