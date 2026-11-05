@@ -5,7 +5,7 @@ title: "About"
 I am Matteo Francesco Munafò, a mathematician working on higher category theory and its
 applications to algebraic geometry.
 
-I am looking for a **PhD position in Higher Category Theory and related topics**.
+I am looking for a PhD position in **higher category theory** and related topics.
 
 ## Outside mathematics
 

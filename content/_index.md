@@ -3,14 +3,14 @@
   <div class="intro-text">
     <h1>Matteo Francesco Munafò</h1>
     <p class="intro-role">ALGANT Master in Mathematics<br>Milan · Regensburg</p>
-    <p class="intro-status"><span class="dot"></span>Looking for a PhD position in Higher Category Theory and related topics</p>
+    <p class="intro-status"><span class="dot"></span><span>Looking for a PhD position in mathematics</span></p>
   </div>
 </header>
 
 <p class="lede">
   I work on <strong>higher category theory</strong> and its applications to
-  <strong>algebraic geometry</strong>. I am looking for a PhD position in Higher
-  Category Theory and related topics.
+  <strong>algebraic geometry</strong>. I am looking for a PhD position in
+  <strong>higher category theory</strong> and related topics.
 </p>
 
 <nav class="quick-links">
