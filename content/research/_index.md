@@ -23,8 +23,7 @@ model category) the strict univalent universes of a fixed size form a **contract
 space of choices**. I also give an alternative construction of Shulman's universe that
 avoids simplicial structures.
 
-What remains is to extend the result to π-tribes, and to prove an analogous statement
-for the π-tribes that model homotopy type theory and present a given ∞-topos.
+I recently extended the main result to π-tribes. I'm now working to prove that all π-tribes that localize to the a fixed topos and model HoTT form a contractible space.
 
 [Thesis (PDF)](/publications/thesis.pdf) · [Slides](/research/thesis-slides.pdf) ·
 [Publications](/publications/)
