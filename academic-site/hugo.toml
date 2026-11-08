@@ -1,0 +1,100 @@
+baseURL = "https://matteomunafo.github.io/"
+languageCode = "en-us"
+title = "Matteo Francesco Munafò"
+theme = "PaperMod"
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+
+[pagination]
+  pagerSize = 10
+
+[minify]
+  disableXML = true
+
+[params]
+  env = "production"
+  mainSections = ["research", "publications", "seminars"]
+  title = "Matteo Francesco Munafò"
+  description = "Matteo Munafò (Matteo Francesco Munafò) — mathematics, higher category theory, algebraic geometry, higher topoi and homotopy type theory."
+  keywords = ["Matteo Munafò", "Matteo Francesco Munafò", "higher category theory", "higher topoi", "homotopy type theory", "algebraic geometry", "strict univalent universes", "Cisinski model categories", "infinity-topoi"]
+  author = "Matteo Francesco Munafò"
+  images = ["images/profile.jpg"]
+  DateFormat = "January 2006"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowShareButtons = false
+  ShowReadingTime = false
+  ShowPostNavLinks = false
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = false
+  ShowPageNums = false
+  comments = false
+  hidemeta = true
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+
+  # Small round "M" monogram at the top left, next to the name.
+  # The photo on the home page is static/images/profile.jpg (replace it, same file name).
+  [params.label]
+    text = "Matteo Francesco Munafò"
+    icon = "/images/monogram.png"
+    iconHeight = 34
+
+  [params.assets]
+    disableHLJS = true
+    favicon = "/favicon.ico"
+    theme_color = "#FAF8F4"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:matteo.munafo02@gmail.com"
+
+  # To show a GitHub icon too, remove the "#" from the next three lines:
+  # [[params.socialIcons]]
+  #   name = "github"
+  #   url = "https://github.com/matteomunafo"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+
+[[menu.main]]
+  identifier = "research"
+  name = "Research"
+  url = "/research/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "publications"
+  name = "Publications"
+  url = "/publications/"
+  weight = 15
+
+[[menu.main]]
+  identifier = "seminars"
+  name = "Seminars"
+  url = "/seminars/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "cv"
+  name = "CV"
+  url = "/cv/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 40
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
