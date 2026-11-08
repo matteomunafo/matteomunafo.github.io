@@ -51,7 +51,7 @@
     proof of Shulman's construction that avoids simplicial structures.
   </p>
   <p class="featured-links">
-    <a href="/publications/thesis.pdf">PDF</a>
+    <a href="/publications/Thesis.pdf">PDF</a>
     <a href="/research/thesis-slides.pdf">Slides</a>
   </p>
 </section>

@@ -15,4 +15,4 @@ The thesis also simplifies Shulman's proof that every ∞-topos is presented by 
 of homotopy type theory, avoiding simplicial structures and giving a different
 construction of the universe.
 
-[PDF](/publications/thesis.pdf) · [Slides](/research/thesis-slides.pdf)
+[PDF](/publications/Thesis.pdf) · [Slides](/research/thesis-slides.pdf)

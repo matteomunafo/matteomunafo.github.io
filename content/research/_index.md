@@ -25,7 +25,7 @@ avoids simplicial structures.
 
 I recently extended the main result to π-tribes. I'm now working to prove that all π-tribes that localize to the a fixed topos and model HoTT form a contractible space.
 
-[Thesis (PDF)](/publications/thesis.pdf) · [Slides](/research/thesis-slides.pdf) ·
+[Thesis (PDF)](/publications/Thesis.pdf) · [Slides](/research/thesis-slides.pdf) ·
 [Publications](/publications/)
 
 ## Other interests
